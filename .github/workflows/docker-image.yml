@@ -28,10 +28,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t diananu04/docker-graphql:0.0.2 .
+        docker build -t diananu04/docker-graphql:latest .
         
     - name: Build Docker Image
       run: |
         docker push diananu04/docker-graphql:0.0.2 
+        docker push diananu04/docker-graphql:latest
         
         
         
