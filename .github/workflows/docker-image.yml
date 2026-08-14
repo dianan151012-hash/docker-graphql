@@ -47,7 +47,7 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker push diananu04/docker-graphql:NEW_VERSION 
+        docker push diananu04/docker-graphql:$NEW_VERSION 
         docker push diananu04/docker-graphql:latest
         
         
